@@ -1,0 +1,94 @@
+mixin menuItem(text, icon, href = "#") 
+    li.menu-item
+        a.menu-link(href= href)
+            img.menu-icon(src= icon alt = text + ' icon')
+            span.menu-text= text
+
+mixin toggle()
+    label.toggle
+        input(type="checkbox", name="")
+        .toggle-main
+            .toggle-spinner 
+
+mixin feedItem() 
+    .feed-item 
+        .feed-item-header 
+            .feed-author
+                .feed-author-avatar
+                    img(src="https://images.unsplash.com/photo-1578489758854-f134a358f08b?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt="author image")
+                    span
+                        img(src="./images/feed/icon-verified.svg", alt="verified icon")
+                .feed-author-content 
+                    .feed-author-header
+                        h4.feed-author-name James Killend 
+                        .feed-author-rating
+                            span rated an episude
+                            span
+                                each item in [1, 2, 3, 4, 5]
+                                    img(src="./images/feed/icon-magic-star-bold.svg", alt="")
+                    .feed-author-date Jun 25th
+            span.feed-more 
+                img(src="./images/feed/icon-more.svg", alt="more icon")
+        .feed-item-main
+            .feed-main-image
+                img(src="./images/feed/content.png", alt="")
+            .feed-main-content
+                .feed-main-podcast Perspective Podcast (Ep. 1) 
+                .feed-main-heading Philosophy vs Religion vs Science: Yahia Amin and Sadman Sadik
+                .feed-main-time 
+                    span
+                        img(src="./images/feed/icon-time-circle.svg", alt="")
+                        span 11 days ago
+                    span
+                        img(src="./images/feed/icon-timer.svg", alt="")
+                        span 45mins 10 Sec
+                p.feed-main-description Play Philosophy vs Religion vs Science: Perspective Podcast (Ep. 1) | Yahia Amin and Sadman Sadik by PERSPECTIVE with Yahia Amin on desktop and mobile. Play over 265 million tracks for...
+                img(src="./images/feed/icon-union.svg", alt="")
+        .feed-item-footer
+            .feed-item-interact
+                img(src="./images/feed/icon-heart.svg", alt="")
+                img(src="./images/feed/icon-magic-star.svg", alt="")
+                img(src="./images/feed/icon-music-playlist.svg", alt="")
+            button.button.button--primary
+                img(alt="icon play now" src="./images/icons/icon-play-now.svg")
+                span Play now
+
+mixin widgetHeader(header) 
+    .widget-header
+        h3.widget-heading= header
+        a.widget-view-all(href="#") 
+            span View all
+            img(src="./images/widget/icon-cheveron.svg", alt="")
+
+mixin followItem(avatar, name, id)
+    .follow 
+        .follow-user 
+            .follow-user-avatar 
+                img(src=avatar , alt="")
+            .follow-user-info 
+                h4.follow-user-name= name 
+                p.follow-user-id= id 
+        button.button.button--primary 
+            span Follow
+
+mixin historyItem(img, author, name, played, liked)
+    .history    
+        .history-image 
+            img(src= img, alt="")
+        .history-content 
+            h4.history-podcast-author= "Perspective with " + author
+            h4.history-podcast-name= name
+            .history-podcast-footer
+                span 
+                    img(src="./images/history/icon-play.svg", alt="") 
+                    span= played
+                span
+                    img(src="./images/history/icon-heart.svg", alt="")
+                    span= liked
+
+mixin topicItem(img, tilte, quantity)
+    .topic
+        img.topic-image(src=img alt="")
+        .topic-content
+            h4.topic-tilte=  tilte
+            span.topic-quantity= quantity

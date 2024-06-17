@@ -1,0 +1,5 @@
+.widget.widget-topic
+    +widgetHeader("Topics")
+    .topic-list 
+        each topic in [{img: "https://images.unsplash.com/photo-1584281999792-8a84fb9d1c15?q=80&w=2470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", title: "👫 Society & Culture", quantity: "7k podcast"}, {img: "https://images.unsplash.com/photo-1716996642066-f518043b5a04?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8", title: "🏫 Educations", quantity: "21k podcast"}, {img: "https://images.unsplash.com/photo-1713815541141-f4ee65e7d1c5?q=80&w=2648&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", title: "🎨 Arts", quantity: "3k podcast"}, {img: "https://images.unsplash.com/photo-1713817130228-34cbb9d7bacc?q=80&w=2656&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", title: "💸 Business", quantity: "2k podcast"}]
+            +topicItem(topic.img, topic.title, topic.quantity)

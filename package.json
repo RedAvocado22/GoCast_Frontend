@@ -1,0 +1,12 @@
+{
+  "name": "gulp",
+  "version": "1.0.0",
+  "description": "compilite pug and sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./scss:css/ --watch",
+    "pug": "sh -c 'pug *.pug --pretty -w'"
+  },
+  "author": "",
+  "license": "ISC"
+}

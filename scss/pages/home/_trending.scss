@@ -1,0 +1,74 @@
+@use "../../utils";
+
+.trending {
+  padding-top: 55px;
+  padding-bottom: 36px;
+
+  &-heading {
+    padding-bottom: 11px;
+  }
+  &-banner {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: utils.$natural1;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+  }
+  &-content {
+    flex: 0 0 310px;
+  }
+  &-title {
+    font-size: 22px;
+    line-height: 145.455%;
+    margin-bottom: 11px;
+    span {
+      @include utils.textGradient();
+      background-image: utils.$gradient;
+    }
+  }
+  &-podcast {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 142.857%;
+    color: utils.$natural;
+    margin-bottom: 4px;
+  }
+  &-author {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142.857%;
+    margin-bottom: 20px;
+    color: utils.$primary-black;
+    span {
+      color: utils.$natural;
+    }
+  }
+  .button--primary {
+    padding: 8px 14px;
+    gap: 8px;
+    font-size: 15px;
+    line-height: 146.667%;
+  }
+  &-vector {
+    position: absolute;
+    @include utils.size(32px, 30px);
+    right: 12%;
+    top: 18%;
+  }
+  &-frame {
+    position: absolute;
+    @include utils.size(140px);
+    bottom: 0;
+    right: 30%;
+    transform: translateY(30%);
+    z-index: 0;
+  }
+  &-image {
+    position: absolute;
+    right: 15px;
+    max-width: 332px;
+    bottom: 0;
+  }
+}

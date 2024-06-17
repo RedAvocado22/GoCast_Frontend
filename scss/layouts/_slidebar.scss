@@ -1,0 +1,56 @@
+@use "../utils";
+
+.slidebar {
+  @include utils.bg();
+  padding: 48px 30px;
+  border-right: 1px solid utils.$natural2;
+}
+
+.logo {
+  display: block;
+  margin-bottom: 42px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  --gap: 26px;
+  &-heading {
+    color: utils.$menu-text;
+    font-size: 13px;
+    font-style: normal;
+    line-height: 146.154%;
+    margin-bottom: 4px;
+    padding-left: 20px;
+  }
+  &-icon {
+    flex: 0 0 24px;
+  }
+  &:not(:last-child):after {
+    content: "";
+    display: block;
+    width: 196px;
+    height: 1px;
+    background-color: utils.$gray-e9;
+    margin-block: var(--gap);
+  }
+  &-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: utils.$menu-text;
+    font-size: 14px;
+    line-height: 143%;
+    padding: 8px 30px 8px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    &:hover {
+      background: var(
+        --Gradient,
+        linear-gradient(92deg, #415ef4 0.33%, #7141ef 28.14%)
+      );
+      color: white;
+    }
+  }
+}

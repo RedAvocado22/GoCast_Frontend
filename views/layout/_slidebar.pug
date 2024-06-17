@@ -1,0 +1,14 @@
+aside.slidebar 
+    a.logo(href= "home.html")
+        img(srcSet= "./images/logo.png 2x" alt = "gocastLogo")
+    ul.menu 
+        each item in [{text: "Home", icon: "./images/icons/icon-home.svg", href: "home.html"}, {text: "Trending", icon: "./images/icons/icon-chart.svg", href: "trending.html"}, {text: "Explore Topics", icon: "./images/icons/icon-3dcube.svg"}, {text: "Playlist", icon: "./images/icons/icon-play.svg"}, {text: "Subscriptions", icon: "./images/icons/icon-sub.svg"}]
+            +menuItem(item.text, item.icon, item.href)
+    ul.menu 
+        h3.menu-heading Podcasters
+        each item in [{text: "Dashboard", icon: "./images/icons/icon-discovery.svg"}, {text: "Episodes", icon: "./images/icons/icon-microphone.svg"}, {text: "Team", icon: "./images/icons/icon-user.svg"}, {text: "Subscribers", icon: "./images/icons/icon-addUser.svg"}]
+            +menuItem(item.text, item.icon)
+    ul.menu 
+        h3.menu-heading Community
+        each item in [{text: "Leaderboard", icon: "./images/icons/icon-medal.svg"}]
+            +menuItem(item.text, item.icon)

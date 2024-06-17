@@ -1,0 +1,14 @@
+@use "../utils";
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  &--primary {
+    color: utils.$natural1;
+    background-color: utils.$primary-color;
+  }
+}

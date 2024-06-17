@@ -1,0 +1,5 @@
+.widget.widget-history
+    +widgetHeader("Listening history")
+    .history-list
+        each history in [{img: "https://images.unsplash.com/photo-1713815539431-5ce4e94f1809?q=80&w=2590&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", author: "Yahia Amin", name: "Don't Always Win | LifeSpring", played: "136", liked: "23"}, {img: "https://images.unsplash.com/photo-1684184668482-37764a5776f6?q=80&w=2656&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", author: "Mufti Menk", name: "Keep Moving. Don't Look Back!", played: "387", liked: "128"}, {img: "https://images.unsplash.com/photo-1702586364104-2e0db3f67c1e?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDg5fEUtLV9wbklpckc0fHxlbnwwfHx8fHw%3D", author: "Yahia Mufti", name: "Religion and Science", played: "133", liked: "78"}]
+            +historyItem(history.img, history.author, history.name, history.played, history.liked)

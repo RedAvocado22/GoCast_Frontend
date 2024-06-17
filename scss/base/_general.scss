@@ -1,0 +1,35 @@
+@use "../utils";
+
+.heading {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  color: utils.$black1;
+}
+
+.widget {
+  margin-bottom: 40px;
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &-heading {
+    font-size: 16px;
+    line-height: 150%;
+  }
+  &-view-all {
+    font-size: 13px;
+    color: utils.$grey2;
+    font-weight: 500;
+    line-height: 138.462%;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    img {
+      transform: translateY(1px);
+    }
+  }
+}

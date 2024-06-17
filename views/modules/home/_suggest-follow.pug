@@ -1,0 +1,5 @@
+.widget.widget-suggest
+    +widgetHeader("Suggested Follows")
+    .follow-list 
+        each user in [{avatar: "https://plus.unsplash.com/premium_vector-1689096833880-42980c252802?bg=FFFFFF&q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", name: "Yahia Amin", id: "@yahiamdamin"}, {avatar: "https://plus.unsplash.com/premium_vector-1707445732035-ac1253c16a60?bg=FFFFFF&q=80&w=2644&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", name: "Mufti Menk", id: "@muftimenk"}, {avatar: "https://plus.unsplash.com/premium_vector-1712890451311-ac727f07e759?bg=FFFFFF&q=80&w=2728&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", name: "Omar Suleiman", id: "@omarsuleiman"}, {avatar: "https://plus.unsplash.com/premium_vector-1707445732030-03881dc3191e?bg=FFFFFF&q=80&w=2644&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", name: "Nouman Ali Khan", id: "@noumanalikhan"}]
+            +followItem(user.avatar, user.name, user.id)

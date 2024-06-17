@@ -1,0 +1,22 @@
+@use "../utils";
+
+body {
+  font-family: utils.$font-primary;
+  color: utils.$text-black1;
+  font-weight: 400;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 150%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  font-weight: 600;
+}
